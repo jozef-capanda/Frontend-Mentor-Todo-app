@@ -95,7 +95,6 @@ const TodosContextProvider = ({ children }: TodosContextProps) => {
 
   const addTodo = async (text: string): Promise<void> => {
     setError(false);
-
     try {
       const todoRef = await addDoc(todosCollection, {
         text,
