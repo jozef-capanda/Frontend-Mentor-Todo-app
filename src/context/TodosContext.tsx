@@ -158,9 +158,8 @@ const TodosContextProvider = ({ children }: TodosContextProps) => {
 
   const removeTodo = async (id: string): Promise<void> => {
     setError(false);
-    let tempTodos = [...todos];
     try {
-      const newTodos = tempTodos.filter((todo) => todo.id !== id);
+      const newTodos = todos.filter((todo) => todo.id !== id);
       setTodos(newTodos);
       setPositions((prevState) => ({
         all: prevState.all.filter((item) => item !== id),
@@ -178,9 +177,8 @@ const TodosContextProvider = ({ children }: TodosContextProps) => {
 
   const clearCompleted = async (): Promise<void> => {
     setError(false);
-    const tempTodos = [...todos];
     try {
-      const newTodos = tempTodos.filter((todo) => todo.completed === false);
+      const newTodos = todos.filter((todo) => todo.completed === false);
 
       setTodos(newTodos);
 
@@ -192,8 +190,6 @@ const TodosContextProvider = ({ children }: TodosContextProps) => {
         batch.delete(doc.ref);
       });
       await batch.commit();
-
-      setError(false);
     } catch (error) {
       console.log(error);
       setError(true);
