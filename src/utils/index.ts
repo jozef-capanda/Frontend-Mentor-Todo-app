@@ -2,11 +2,11 @@ import { Positions, Todo } from "../context/TodosContext";
 
 export const filterTodos = (
   todos: Todo[],
-  btnStatus: string,
+  filterStatus: string,
   positions: Positions
 ): Todo[] => {
   const { all, active, completed } = positions;
-  switch (btnStatus) {
+  switch (filterStatus) {
     case "all":
       return todos.sort((a, b) => all.indexOf(a.id) - all.indexOf(b.id));
 
