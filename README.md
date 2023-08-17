@@ -48,5 +48,4 @@ Users should be able to:
 
 ## Author
 
-- GitHub - [Jozef Capanda](https://github.com/jozef-capanda)
 - Frontend Mentor - [@jozef-capanda](https://www.frontendmentor.io/profile/jozef-capanda)
