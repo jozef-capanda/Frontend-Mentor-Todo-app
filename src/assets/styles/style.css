@@ -1,4 +1,4 @@
-.dark-theme {
+.dark {
   --clr-bg: hsla(235, 21%, 11%, 1);
   --clr-todo: hsla(235, 39%, 85%, 1);
   --clr-todo-bg: hsl(235, 24%, 19%);
@@ -22,7 +22,7 @@
   --bg-mobile: url("../images/bg/bg-mobile-dark.jpg");
 }
 
-.light-theme {
+.light {
   --clr-bg: hsl(0, 0%, 95%);
   --clr-todo: hsla(235, 19%, 35%, 1);
   --clr-todo-bg: hsl(0, 0%, 100%);

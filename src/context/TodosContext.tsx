@@ -15,7 +15,7 @@ import {
   getPositions,
   removePosition,
   updatePosition,
-} from "../firebase/dndPositions";
+} from "../firebase/dragAndDropPositions";
 
 export type Todo = {
   id: string;
